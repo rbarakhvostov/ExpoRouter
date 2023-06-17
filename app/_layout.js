@@ -10,16 +10,21 @@ export default () => {
         headerTintColor: '#ffc8dd',
         headerStyle: { backgroundColor: '#000000' },
         headerTitleStyle: { fontWeight: 'bold' },
-        headerRight: () => (
-          <AntDesign
-            name="infocirlceo"
-            size={24} color="#ffffff"
-            onPress={() => router.push('/modal')}
-          />
-        )
       }}
     >
-      <Stack.Screen name="index" options={{ title: 'Home' }} />
+      <Stack.Screen
+        name="index"
+        options={{
+          title: 'Home',
+          headerRight: () => (
+            <AntDesign
+              name="infocirlceo"
+              size={24} color="#ffffff"
+              onPress={() => router.push('/modal')}
+            />
+          )
+        }}
+      />
       <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
     </Stack>
   )
