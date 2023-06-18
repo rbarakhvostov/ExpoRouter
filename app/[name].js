@@ -3,7 +3,7 @@ import { Text, View, Button } from "react-native"
 import { Stack } from "expo-router"
 
 
-export default id = () => {
+export default Name = () => {
   const router = useRouter()
   const { name } = useSearchParams()
 

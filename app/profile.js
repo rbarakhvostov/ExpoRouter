@@ -2,7 +2,7 @@ import { useRouter, useSearchParams } from "expo-router"
 import { Text, View, Button } from "react-native"
 import { Stack } from "expo-router"
 
-export default profile = () => {
+export default Profile = () => {
   const router = useRouter()
   const { name, surname } = useSearchParams()
 
