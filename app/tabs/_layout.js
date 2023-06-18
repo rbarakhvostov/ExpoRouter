@@ -8,7 +8,11 @@ export default () => (
       headerStyle: { backgroundColor: '#9575de' },
       headerTitleStyle: { fontWeight: 'bold' },
       tabBarShowLabel: false,
-      tabBarActiveTintColor: '#9575de'
+      tabBarActiveTintColor: '#00dfa2',
+      tabBarInactiveTintColor: '#000000',
+      tabBarStyle: {
+        backgroundColor: '#9575de'
+    }
     }}
   >
     <Tabs.Screen
@@ -20,7 +24,8 @@ export default () => (
     <Tabs.Screen
       name='messages'
       options={{
-        tabBarIcon: ({ color }) => <Entypo name="message" size={24} color={color} />
+        tabBarIcon: ({ color }) => <Entypo name="message" size={24} color={color} />,
+        headerShown: false
       }}
     />
     <Tabs.Screen

@@ -1,10 +1,15 @@
+import { useSearchParams } from "expo-router"
 import { View, Text, StyleSheet } from "react-native"
 
-export default Messages = () => (
-  <View style={styles.container}>
-    <Text style={styles.text}>messages</Text>
-  </View>
-)
+export default MessageRoom = () => {
+  const { name } = useSearchParams()
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>message room with { name }</Text>
+    </View>
+  )
+ }
 
 const styles = StyleSheet.create({
   container: {

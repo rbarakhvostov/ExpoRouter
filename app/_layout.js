@@ -9,7 +9,7 @@ export default () => {
       screenOptions={{
         headerTintColor: '#ffc8dd',
         headerStyle: { backgroundColor: '#000000' },
-        headerTitleStyle: { fontWeight: 'bold' },
+        headerTitleStyle: { fontWeight: 'bold' }
       }}
     >
       <Stack.Screen
